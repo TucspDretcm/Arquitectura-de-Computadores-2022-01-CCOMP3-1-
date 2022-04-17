@@ -8,9 +8,13 @@ Alumno: Alexander Carpio Mamani
 División de enteros
 */
 
+#include <iostream>
+#include <bitset>
+using namespace std;
+
 int main(){
-	const int n_bits = 8;
-	int A=0, M=5, Q=253, Count=n_bits;
+	const int n_bits = 10;
+	int A=0, M=3, Q=964, Count=n_bits;
 	bitset<n_bits> binary_Q (Q), binary_A (A);
 	
 	while(Count>0){
