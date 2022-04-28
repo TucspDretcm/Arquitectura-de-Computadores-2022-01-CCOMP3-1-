@@ -17,7 +17,7 @@ using namespace std;
 int get_n_exponent(string bstring, int n_exponent){
 	for(int i=0; i<bstring.length();i++){
 		if(bstring[i]=='1') return n_exponent;
-		n_exponent--;
+		if(n_exponent>1) n_exponent--;
 	}
 	return 0;
 }
